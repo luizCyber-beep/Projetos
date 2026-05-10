@@ -92,10 +92,12 @@ header nav ul li:hover::after{
     justify-content: center;
     align-items: center;
     opacity:0;
+    transform: translateX(100vw);
+    transition: transform 0.9s ease-in-out, opacity 0.7s ease-in-out;
 }
 .active{
     opacity:1;
-
+    transform: translateX(0);
 }
 .product-img{
     width:45%;
@@ -117,7 +119,7 @@ header nav ul li:hover::after{
     display:flex;
     align-items: flex-start;
     justify-content: center;
-    z-index:2;
+    z-index:4;
     flex-direction:column;
 }
 .product-tag{
