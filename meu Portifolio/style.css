@@ -1,4 +1,78 @@
 *{
     list-style:none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    color:#359cb6;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+header{
+    position:relative;
+    right:8px;
+    top:-10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px;
+    background: #461787;
+    background: linear-gradient(90deg, rgba(70, 23, 135, 1) 0%, rgba(38, 0, 92, 1) 35%, rgba(36, 0, 71, 1) 100%);
+    width:101%;
+}
+.titulo{
+    font-size:25px;
+    color:#359cb6;
+    margin-left:10px;
+    padding:5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+    text-shadow:#768fff 0px 0px 20px;
+}
+.Lista{
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#359cb6;
+    font-size:16px;
+    margin-right:10px;
+    cursor:pointer;
+}
+.item-lista{
+    margin:5px;
+    padding:5px;
+    font-weight:600;
+}
+.item-lista:hover{
+    text-shadow:#ffffff 0px 0px 10px;
+    animation:shadow-pulse 0.5s ease-in-out;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        text-shadow: #ffffff 0px 0px 10px;
+    }
+    50% {
+        text-shadow: #ffffff 0px 0px 15px;
+    }
+    100% {
+        text-shadow: #ffffff 0px 0px 10px;
+    }
+}
+body{
+    background: #ffffff;
+    background: linear-gradient(90deg, rgb(30, 11, 56) 0%, rgb(44, 0, 105) 35%, rgb(17, 2, 32) 100%);
+    overflow:hidden;
+}
+form{
+    background: #461787;
+    background: linear-gradient(90deg, rgb(38, 23, 94) 0%, rgba(38, 0, 92, 1) 35%, rgba(36, 0, 71, 1) 100%);
+    border-radius: 20px;
+    width:500px;
+    height:420px;
+    align-items:center;
+    justify-content:center;
+    margin:30px;
+    box-shadow:#0000009a -10px 0px 100px;
+}
+.formulariom{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
